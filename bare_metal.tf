@@ -1,6 +1,6 @@
 resource "ibm_compute_bare_metal" "hourly-bm1" {
   hostname                   = "${var.bm_hostname}"
-  domain                     = "${var.bm.domain}"
+  domain                     = "${var.bm_domain}"
   os_reference_code          = "${var.bm_os_reference_code}"
   datacenter                 = "${var.datacenter}"
   network_speed              = "${var.vm_network_speed}"

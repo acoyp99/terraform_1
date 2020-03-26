@@ -1,11 +1,17 @@
-variable "iaas_classic_username" { }
-variable "iaas_classic_api_key" { }
-variable "ibmcloud_api_key" { }
+provider ibm {
+  ibmcloud_api_key      = "${var.ibmcloud_apikey}"
+  region                = "${var.ibm_region}"
+  generation            = 1
+  ibmcloud_timeout      = 60
+}
 
-provider "ibm" {
-  iaas_classic_username = var.iaas_classic_username
-  iaas_classic_api_key  = var.iaas_classic_api_key
-  ibmcloud_api_key	= var.ibmcloud_api_key
-  generation	= 1
-  región = "us-south"
+##############################################################################
+
+
+##############################################################################
+# Resource Group
+##############################################################################
+
+data ibm_resource_group resource_group {
+  name = "${var.resource_group}"
 }

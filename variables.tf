@@ -46,7 +46,7 @@ variable "bm_memory" {
 }
 
 variable "bm_disks" {
-  default = 1024
+  default = 25
 }
 
 variable "hourly_billing" {

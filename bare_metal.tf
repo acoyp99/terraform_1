@@ -5,7 +5,7 @@ resource "ibm_compute_bare_metal" "hourly-bm1" {
   datacenter                 = "${var.datacenter}"
   network_speed              = "${var.vm_network_speed}"
   hourly_billing             = "${var.hourly_billing}"
-  private_network_only       = "${var.hourly_billing}"
+  private_network_only       = "${var.private_network}"
   cores                      = "${var.cores}"
   disks                      = ["${var.bm_disks}"]
   local_disk                 = false

@@ -37,7 +37,7 @@ variable "private_network" {
   default = "true or false"
 }
 
-variable "cores" {
+variable "bm_cores" {
   default = 1
 }
 

@@ -1,3 +1,16 @@
+variable ibmcloud_apikey {
+  description = "The IBM Cloud platform API key needed to deploy IAM enabled resources"
+}
+
+variable ibm_region {
+  description = "IBM Cloud region where all resources will be deployed"
+  default     = "us-south"
+}
+
+variable resource_group {
+  description = "Name of resource group to provision resources"
+  default     = "default"
+}
 
 variable "bm_hostname" {
   default = "BareMetal01"

@@ -9,7 +9,7 @@ variable ibm_region {
 
 variable resource_group {
   description = "Name of resource group to provision resources"
-  default     = "default"
+  default     = "landing-zone"
 }
 
 variable "bm_hostname" {

@@ -17,7 +17,8 @@ variable "bm_hostname" {
 }
 
 variable "bm_os_reference_code" {
-  default = "CENTOS_7_64"
+  description = "REDHAT_6_64, CENTOS_6_32, UBUNTU_12_64, DEBIAN_8_64, REDHAT_6_32, CENTOS_6_64, REDHAT_7_64, DEBIAN_8_32, WIN_2008-STD-R2-SP1_64, UBUNTU_12_32, CENTOS_7_64, WIN_2003-STD-SP2-5_64, WIN_2012-STD_64, UBUNTU_16_64, WIN_2016-STD_64, DEBIAN_9_64, WIN_2019-STD_64, WIN_2012-STD-R2_64, UBUNTU_14_32, UBUNTU_18_64" 
+  default = "No_OS"
 }
 
 variable "datacenter" {
@@ -29,24 +30,18 @@ variable "bm_domain" {
   default = "baremetal01.ibm.com"
 }
 
-variable "vm_network_speed" {
-  default = 10
+variable "bm_network_speed" {
+  default = 100
 }
 
 variable "private_network" {
-  default = "true or false"
+  description = "true or false"
+  default = "false"
 }
 
-variable "bm_cores" {
-  default = 1
-}
 
-variable "bm_memory" {
-  default = 1024
-}
-
-variable "bm_disks" {
-  default = 25
+variable "notes_bm" {
+  default = "test"
 }
 
 variable "hourly_billing" {

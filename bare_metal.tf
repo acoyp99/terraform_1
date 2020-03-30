@@ -6,6 +6,6 @@ resource "ibm_compute_bare_metal" "baremetal01" {
   network_speed              = "${var.bm_network_speed}"
   hourly_billing             = "${var.hourly_billing}"
   private_network_only       = "${var.private_network}"
-  fixed_config_preset        = "${var.processor}"
+  package_key_name           = "${var.processor}"
   notes                      = "${var.notes_bm}"
 }

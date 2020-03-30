@@ -17,8 +17,8 @@ variable "bm_hostname" {
 }
 
 variable "bm_os_reference_code" {
-  description = "REDHAT_6_64, CENTOS_6_32, UBUNTU_12_64, CENTOS_6_64, DEBIAN_8_32, WIN_2008-STD-R2-SP1_64, UBUNTU_12_32, CENTOS_7_64, WIN_2003-STD-SP2-5_64, WIN_2012-STD_64, UBUNTU_16_64, WIN_2016-STD_64, DEBIAN_9_64, WIN_2019-STD_64, WIN_2012-STD-R2_64, UBUNTU_14_32, UBUNTU_18_64 ... RedHat is only avaliable in monthly billing" 
-  default = "No_OS"
+  description = "Default is No Operating System - More info : https://api.softlayer.com/rest/v3/SoftLayer_Hardware/getCreateObjectOptions.json" 
+  default = "CUSTOS_1_64"
 }
 
 variable "datacenter" {
@@ -43,6 +43,10 @@ variable "private_network" {
 variable "notes_bm" {
   default = "test"
 }
+
+variable "processor" {
+  description = "SAP Certificated Hourly 4 Cores BI_S1_NW32 - More info: https://api.softlayer.com/rest/v3/SoftLayer_Product_Package/getAllObjects?objectFilter={%22type%22:{%22keyName%22:{%22operation%22:%22BARE_METAL_CPU%22}}} "
+  }
 
 variable "hourly_billing" {
   default = "true"

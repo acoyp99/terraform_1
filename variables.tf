@@ -45,7 +45,7 @@ variable "notes_bm" {
 }
 
 variable "processor" {
-  description = "SAP Certificated Hourly 4 Cores BI_S1_NW32 - More info: https://api.softlayer.com/rest/v3/SoftLayer_Product_Package/getAllObjects?objectFilter={%22type%22:{%22keyName%22:{%22operation%22:%22BARE_METAL_CPU%22}}} "
+  description = "SAP Certified Hourly 4 Cores BI_S1_NW32 - More info: https://api.softlayer.com/rest/v3/SoftLayer_Product_Package/getAllObjects?objectFilter={%22type%22:{%22keyName%22:{%22operation%22:%22BARE_METAL_CPU%22}}} "
   }
 
 variable "hourly_billing" {

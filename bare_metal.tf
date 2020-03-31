@@ -7,5 +7,6 @@ resource "ibm_compute_bare_metal" "baremetal01" {
   hourly_billing             = "${var.hourly_billing}"
   private_network_only       = "${var.private_network}"
   package_key_name           = "${var.processor}"
+  process_key_name           = "${var.key_process}"
   notes                      = "${var.notes_bm}"
 }

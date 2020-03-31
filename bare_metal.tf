@@ -10,6 +10,8 @@ resource "ibm_compute_bare_metal" "baremetal01" {
   private_network_only       = "${var.private_network}"
   package_key_name           = "${var.processor}"
   process_key_name           = "${var.key_process}"
+  public_bandwidth           = 500
+  disk_key_names             = "HARD_DRIVE_2000GB_HDD"
   notes                      = "${var.notes_bm}"
     
   }
